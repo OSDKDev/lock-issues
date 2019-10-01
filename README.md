@@ -6,7 +6,7 @@ To add it to your workflow:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         
-A full example workflow:
+Sample file: `.github/workflows/lock-closed-issues.yml`
 
     name: Lock closed issues
 
