@@ -15,7 +15,7 @@ Sample file: `.github/workflows/lock-closed-issues.yml`
         types: [closed]
 
     jobs:
-      triage:
+      lock:
         runs-on: ubuntu-latest
         steps:
         - uses: Dunning-Kruger/lock-issues@v1
