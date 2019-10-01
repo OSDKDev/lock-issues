@@ -1,0 +1,12 @@
+name: 'Lock Issues'
+description: 'Locks an issue, to be used on an event.'
+inputs:
+  repo-token:
+    description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+branding:
+  icon: lock
+  color: black
+runs:
+  using: 'node12'
+  main: 'label.js'
