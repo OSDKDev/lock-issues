@@ -1,0 +1,23 @@
+{
+  "name": "lock-issues",
+  "version": "1.0.0",
+  "description": "Lock an issue",
+  "main": "lock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dunning-Kruger/lock-issues.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dunning-Kruger/lock-issues"
+  },
+  "homepage": "https://github.com/Dunning-Kruger/lock-issues#readme",
+  "dependencies": {
+    "@actions/core": "^1.0.0",
+    "@actions/github": "^1.0.1"
+  }
+}
