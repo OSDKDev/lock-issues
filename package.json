@@ -2,7 +2,7 @@
   "name": "lock-issues",
   "version": "1.0.0",
   "description": "Lock an issue",
-  "main": "lock.js",
+  "main": "src/lock.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
