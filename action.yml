@@ -9,4 +9,4 @@ branding:
   color: black
 runs:
   using: 'node12'
-  main: 'label.js'
+  main: 'src/lock.js'

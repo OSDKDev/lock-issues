@@ -8,7 +8,7 @@ To add it to your workflow:
         
 Sample file: `.github/workflows/lock-closed-issues.yml`
 
-    name: Lock closed issues
+    name: Lock closed issue
 
     on: 
       issues:
