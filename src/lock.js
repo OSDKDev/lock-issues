@@ -15,7 +15,7 @@ async function lock() {
   return context.payload.issue.number;
 }
 
-label()
+lock()
   .then(
     result => {
       console.log(`Locked issue #${result}.`);
