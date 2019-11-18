@@ -13,9 +13,9 @@ async function lock() {
   console.log("Attempting to lock " + owner + "/" + repo + "/issues/" + issue);
   
   await octokit.issues.lock({
-    owner: issue,
+    owner: owner,
     repo: repo,
-    issue_number: owner
+    issue_number: issue
   });
   
   return issue;
