@@ -1,13 +1,12 @@
-Automatically lock context issue, most commonly used on "close" event.
+Lock an issue. By default, it uses the context's but can be targetted.
 
-To add it to your workflow:
+### Targetting context's issue:
 
     - uses: OSDKDev/lock-issues@v1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         
-Sample file: `.github/workflows/lock-closed-issues.yml`
-
+#### Sample file: `.github/workflows/lock-closed-issues.yml`
     name: Lock closed issue
 
     on: 
@@ -23,3 +22,12 @@ Sample file: `.github/workflows/lock-closed-issues.yml`
             repo-token: "${{ secrets.GITHUB_TOKEN }}"
         
 As simple as that!
+
+### Targetting a specific issue / repo:
+
+    - uses: OSDKDev/lock-issues@v1
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        owner-name: {Owner Name - Optional - Default: Context's Repository Owner}
+        repo-name: {Repository Name - Optional - Default: Context's Repository}
+        issue-number: {Issue Number - Optional - Default: Context's Issue}

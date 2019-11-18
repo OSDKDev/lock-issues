@@ -4,6 +4,15 @@ inputs:
   repo-token:
     description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
     required: true
+  issue-number:
+    description: 'Issue number. Defaults to context\'s issue'
+    required: false
+  owner-name:
+    description: 'Repository owner\'s username. Defaults to context\'s repository owner'
+    required: false
+  repo-name:
+    description: 'Repository name. Defaults to context\'s repository'
+    required: false
 branding:
   icon: lock
   color: black
