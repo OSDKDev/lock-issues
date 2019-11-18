@@ -27,7 +27,7 @@ As simple as that!
 
     - uses: OSDKDev/lock-issues@v1
       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        repo-token: {Token with permissions over the target repository / issue}
         owner-name: {Owner Name - Optional - Default: Context's Repository Owner}
         repo-name: {Repository Name - Optional - Default: Context's Repository}
         issue-number: {Issue Number - Optional - Default: Context's Issue}
