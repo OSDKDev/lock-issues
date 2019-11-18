@@ -1,4 +1,4 @@
-Automatically lock issues, most commonly used on "close" event.
+Automatically lock context issue, most commonly used on "close" event.
 
 To add it to your workflow:
 
