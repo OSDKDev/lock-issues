@@ -5,14 +5,20 @@ async function lock() {
   const myToken = core.getInput("repo-token");
   const octokit = new github.GitHub(myToken);
   const context = github.context;
+  
+  const issue = core.getInput("issue-number") || context.payload.issue.number;
+  const repo = core.getInput("repo-name") || context.payload.repository.name;
+  const owner = core.getInput("owner-name") || context.payload.repository.owner.login;
 
+  console.log("Attempting to lock " + owner + "/" + repo + "/issues/" + issue);
+  
   await octokit.issues.lock({
-    owner: context.payload.repository.owner.login,
-    repo: context.payload.repository.name,
-    issue_number: context.payload.issue.number
+    owner: issue,
+    repo: repo,
+    issue_number: owner
   });
   
-  return context.payload.issue.number;
+  return issue;
 }
 
 lock()
