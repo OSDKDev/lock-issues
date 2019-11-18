@@ -15,7 +15,7 @@ async function lock() {
   await octokit.issues.lock({
     owner: owner,
     repo: repo,
-    issue_number: issue
+    issue_number: parseInt(issue)
   });
   
   return issue;
