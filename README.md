@@ -2,7 +2,7 @@ Lock an issue. By default, it uses the context's but can be targetted.
 
 ### Targetting context's issue:
 
-    - uses: OSDKDev/lock-issues@v1
+    - uses: OSDKDev/lock-issues@v1.1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         
@@ -17,7 +17,7 @@ Lock an issue. By default, it uses the context's but can be targetted.
       lock:
         runs-on: ubuntu-latest
         steps:
-        - uses: OSDKDev/lock-issues@v1
+        - uses: OSDKDev/lock-issues@v1.1
           with:
             repo-token: "${{ secrets.GITHUB_TOKEN }}"
         
@@ -25,7 +25,7 @@ As simple as that!
 
 ### Targetting a specific issue / repo:
 
-    - uses: OSDKDev/lock-issues@v1
+    - uses: OSDKDev/lock-issues@v1.1
       with:
         repo-token: {Token with permissions over the target repository / issue}
         owner-name: {Owner Name - Optional - Default: Context's Repository Owner}
