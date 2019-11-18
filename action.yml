@@ -11,7 +11,7 @@ inputs:
     description: "Repository owner's username. Defaults to context's repository owner"
     required: false
   repo-name:
-    description: "Repository name. Defaults to context\'s repository"
+    description: "Repository name. Defaults to context's repository"
     required: false
 branding:
   icon: lock
