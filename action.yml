@@ -17,5 +17,5 @@ branding:
   icon: lock
   color: black
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'src/lock.js'
