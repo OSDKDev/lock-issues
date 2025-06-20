@@ -4,6 +4,7 @@ inputs:
   repo-token:
     description: "Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}"
     required: true
+    default: '${{ github.token }}'
   issue-number:
     description: "Issue number. Defaults to context's issue"
     required: false
@@ -17,5 +18,5 @@ branding:
   icon: lock
   color: black
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'src/lock.js'
