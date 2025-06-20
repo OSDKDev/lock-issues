@@ -3,7 +3,7 @@ Lock an issue. By default, it uses the context's but can be targetted.
 ### Targetting context's issue:
 ```yml
 - name: Lock issue
-  uses: OSDKDev/lock-issues@v1.2
+  uses: IOrlandoni/lock-issues@v1.2
 ```
 #### Sample file: `.github/workflows/lock-closed-issues.yml`
 ```yml
@@ -21,14 +21,14 @@ jobs:
       issues: write
     steps:
     - name: Lock issue
-      uses: OSDKDev/lock-issues@v1.2
+      uses: IOrlandoni/lock-issues@v1.2
 ```
 As simple as that!
 
 ### Targetting a specific issue / repo:
 ```yml
 - name: Lock issue
-  uses: OSDKDev/lock-issues@v1.2
+  uses: IOrlandoni/lock-issues@v1.2
   with:
     repo-token: {Token with permissions over the target repository / issue}
     owner-name: {Owner Name - Optional - Default: Context's Repository Owner}
